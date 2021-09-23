@@ -36,9 +36,7 @@
 
         </div>
 
-        <div class="row">
-            @include('includes.footer')
-        </div>
+        
 
     </div>
 
@@ -53,4 +51,8 @@
 <script src="{{ asset('/js/app.js') }}"></script>
 
 </body>
+<div class="row">
+            @include('includes.footer')
+        </div>
+
 </html>
