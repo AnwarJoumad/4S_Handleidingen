@@ -1,6 +1,9 @@
 
 <footer>
 	© {{ __('misc.copyright') }}
+  <?php
+      echo "|over ons: bij ons kun je gratis handleidingen downloaden, socials:Facebook: @DWNmanuals | email:DWNmanuals@hotmail.nl | TEL: 06-010101010101"
+  ?>
 </footer>
 
 
