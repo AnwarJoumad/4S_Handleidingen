@@ -15,21 +15,30 @@
         <div class="col-md-8">
             @include('includes.header')
 
-            <ul class="breadcrumb">
-                <li><a href="/" title="{{ __('misc.home_alt') }}"
-                       alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a></li>
-                @yield('breadcrumb')
-            </ul>
+            
 
             @if ( isset($_GET['q']) )
                 @include('includes.search_results')
             @else
                 @yield('content')
             @endif
+            <ul class="breadcrumb">
+                <li><a href="/" title="{{ __('misc.home_alt') }}"
+                       alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a></li>
+                @yield('breadcrumb')
+            </ul>
+
 
             <ul class="breadcrumb">
                 <li>
-					<a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a>
+                <div class="loginkButtonHomepage"> 
+                <a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}>  
+                    <div class="buttonsHomepage">
+                          
+                    </div>    
+                </a>                  
+            </div>
+    
 				</li>
                 @yield('breadcrumb')
             </ul>
