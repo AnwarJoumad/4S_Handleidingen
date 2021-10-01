@@ -31,13 +31,13 @@
 
             <ul class="breadcrumb">
                 <li>
-                <div class="loginkButtonHomepage"> 
+            <div class="loginkButtonHomepage"> 
                 <a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}>  
-                    <div class="buttonsHomepage">
-                          
-                    </div>    
-                </a>                  
+                        
+                </a>  
+                                
             </div>
+            
     
 				</li>
                 @yield('breadcrumb')

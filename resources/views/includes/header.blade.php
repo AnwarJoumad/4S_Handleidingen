@@ -2,9 +2,12 @@
 <div class="jumbotron">
     <div class="container">
         <a href="/" title="{{ __('misc.home_alt') }}" alt="{{ __('misc.home_alt') }}">
-            <h1>{{ __('misc.homepage_title') }}</h1>
+            <button>{{ __('misc.homepage_title') }}</button>
             
         </a>
+        <?php
+        print_r($brand);
+        ?>
         @yield('introduction_text')
     </div>
 </div>
