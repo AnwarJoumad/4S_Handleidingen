@@ -6,6 +6,7 @@
             
         </a>
         <?php
+        echo"<pre>";
         print_r($brand);
         ?>
         @yield('introduction_text')

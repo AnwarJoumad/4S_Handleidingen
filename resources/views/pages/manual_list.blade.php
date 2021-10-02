@@ -13,7 +13,7 @@
 
 <h1>{{ $brand->name }} - {{ $type->name }}</h1>
 
-<p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name, 'type'=>$type->name]) }}</p>
+<p>{{ __('introduction_texts.type_list', ['brand'=>$brand->name, 'type'=>$type->name]) }} </p>
 
 
 	@foreach ($manuals as $manual)

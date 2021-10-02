@@ -14,7 +14,10 @@ class ManualController extends Controller
         $brand = Brand::findOrFail($brand_id);
         $type = Type::findOrFail($type_id);
         $manual = Manual::findOrFail($manual_id);
-        print_r($brand);
+        
+        $brand->counter++;
+        $brand->save();
+
         return view('pages/manual_view', [
             "manual" => $manual,
             "type" => $type,

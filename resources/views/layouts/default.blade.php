@@ -16,12 +16,14 @@
             @include('includes.header')
 
             
-
-            @if ( isset($_GET['q']) )
-                @include('includes.search_results')
-            @else
-                @yield('content')
-            @endif
+           
+                @if ( isset($_GET['q']) )
+                    @include('includes.search_results')
+                @else
+                <div class="manual">
+                    @yield('content')
+                @endif
+                 </div>
             <ul class="breadcrumb">
                 <li><a href="/" title="{{ __('misc.home_alt') }}"
                        alt="{{ __('misc.home_alt') }}">{{ __('misc.home') }}</a></li>
@@ -60,7 +62,7 @@
 <script src="{{ asset('/js/app.js') }}"></script>
 
 </body>
-<div class="row">
+        <div class="row">
             @include('includes.footer')
         </div>
 
